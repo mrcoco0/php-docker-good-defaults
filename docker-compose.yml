@@ -3,7 +3,7 @@ version: '3.3'
 services:
     php:
         # note you need to manually build this image from base dockerfile above FIRST!
-        image: yourdockername/base-php-nginx
+        image: mrcoc0d3/base-php-nginx
         build: .
         volumes:
             # used delegated mode here on docker for mac for faster disk I/O
@@ -48,7 +48,7 @@ services:
             MYSQL_USER: ${DB_USERNAME:-homestead}
             MYSQL_PASSWORD: ${DB_PASSWORD:-secret}
             MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-secret}
-            
+
 # using this named volume ensures db's hang around between "up's"
 volumes:
     mysql:
