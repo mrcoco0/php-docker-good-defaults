@@ -1,4 +1,4 @@
-FROM yourdockername/base-php-nginx:latest
+FROM mrcoc0d3/base-php-nginx:latest
 
 # add bitbucket and github to known hosts for ssh needs
 WORKDIR /root/.ssh
